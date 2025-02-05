@@ -61,7 +61,7 @@ function QuestioneerPage() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(data),
-        }
+        },
       );
 
       const result = await response.json();
@@ -70,7 +70,7 @@ function QuestioneerPage() {
       if (response.ok) {
         localStorage.setItem(
           "recommendations",
-          JSON.stringify(result.recommendations || [])
+          JSON.stringify(result.recommendations || []),
         );
         navigate("/recommendations");
       } else {

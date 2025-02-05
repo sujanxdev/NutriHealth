@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import './RecommendationsPage.css';
-import NavigationMenu from "../components/NavigationMenu"; // Ensure to import NavigationMenu
+import NavigationMenu from "../components/NavigationMenu"; 
 
 const RecommendationsPage = () => {
   const [recommendations, setRecommendations] = useState([]);
@@ -36,21 +36,20 @@ const RecommendationsPage = () => {
 
   return (
     <div className="recommendations-container">
-      {/* Navigation Menu placed inside the Recommendations Container */}
       <NavigationMenu
         style={{
-          position: "absolute", // Keep the menu inside the container
-          top: "10px", // Position it 10px from the top of the container
-          right: "100px", // 50px space from the right edge
-          zIndex: 10, // Ensure it's on top of other elements
+          position: "absolute",
+          top: "10px", 
+          right: "100px", 
+          zIndex: 10, 
           cursor: "pointer",
-          width: "50px", // Set size of the button
+          width: "50px", 
           height: "50px",
-          borderRadius: "50%", // Make it circular
-          backgroundColor: "red", // Or any color of your choice
-          display: "flex", // To center the icon inside the button
-          alignItems: "center", // Center vertically
-          justifyContent: "center", // Center horizontally
+          borderRadius: "50%", 
+          backgroundColor: "red", 
+          display: "flex", 
+          alignItems: "center", 
+          justifyContent: "center", 
         }}
       />
 

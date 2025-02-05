@@ -1,6 +1,8 @@
-var message = "Hello, Sujan Shrestha! How are you?";
-for(var i=0; i<message.length; i++) {
-    message = message.slice(0, i) + "Dipen" + message.slice(i+5);
+let number = 5;
+for(let i=0; i<number; i++) {
+    let pattern = "";
+	for(let j=0; j<=i; j++) {
+    pattern += "*"
+  }
+  console.log(pattern);
 }
-
-console.log(message);
